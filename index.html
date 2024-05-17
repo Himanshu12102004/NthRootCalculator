@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="myLogo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrecisionPro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <span style="font-size: 25px">PrecisionPro </span
+      ><span style="font-size: 12px">(By Himanshu Gupta)</span>
+    </nav>
+    <div id="discription">
+      <div id="question" class="question">
+        <div>What is PrecisionPro?</div>
+        <img src="./dropDown.svg" alt="ffhri" />
+      </div>
+      <div id="forWhat" class="forWhat">
+        <ul>
+          <li>
+            •PrecisionPro can calculate nth-root ie. underroot, cubeoot and so
+            on till any decimal precision(subject to your device)
+          </li>
+          <li>
+            •Start by calculating under root of 2 till 1000 decimal places enter
+            base as 2 and exponent as 1/2 where 1/_ is already given just enter
+            2 and in the number of decimal places write 1000
+          </li>
+          <li>
+            •It can compute upto any number of decimal places be it 10 or 10
+            thousand
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="discription">
+      <div id="question" class="question">
+        <div>How to use it?</div>
+        <img src="./dropDown.svg" />
+      </div>
+      <div id="forWhat" class="forWhat">
+        <ul>
+          <li>Step 1) Fill in all the base, exponent and the decimal places</li>
+          <li>Step 2) Make sure the operation is mathematically possible</li>
+          <li>Step 3) Press calculate button</li>
+          <li>
+            I am attaching a illustration of how to calculate √2 till 1000
+            decimal places it will clear all your doubts
+            <img src="illustration.png" alt="" id="illustrate" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="wait">Calculating Please Wait ...</div>
+    <div class="indications">
+      This calculator can calculate
+      <span id="variables">x <sup id="super">1/y</sup></span>
+    </div>
+    <div class="text" style="margin-top: 15px">Enter x:</div>
+    <input id="number" type="number" placeholder="Enter x" />
+    <br />
+    <div class="text" style="margin-top: 20px">Enter y:</div>
+    <span class="parent">
+      <div id="oneBy">1/</div>
+      <input
+        style="width: 100px"
+        id="pow"
+        type="number"
+        placeholder="Enter y "
+      />
+    </span>
+    <div class="text" style="margin-top: 20px">
+      Enter the number of Decimal places you want:
+    </div>
+    <input
+      id="decimal"
+      type="number"
+      placeholder="Enter the number of decimal places"
+    />
+
+    <br />
+    <button id="submit">Calculate</button>
+    <br />
+
+    <div id="answerBox">
+      <p id="answer"></p>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/decimal.js@10.2.1/decimal.min.js"></script>
+  <script src="script.js"></script>
+</html>
